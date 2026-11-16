@@ -1,8 +1,42 @@
 
-@media screen and (min-width: 998px) {
+/* DESKTOP VIEW */
+@media screen and (min-width: 992px) {
 
-    .coding-card {
-        width: 30%;
+    figure:nth-child(3n) {
+        grid-column: 1 / -1;
+    }
+
+    figure img {
+        border-radius: 0;
+    }
+
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #121212;
+        color: #fff;
+    }
+
+    figure {
+        background-color: #252525;
+        color: #ffff99;
+        border: 2px solid black;
+    }
+
+    figcaption h2 {
+        color: #ffff99;
     }
 
 }
