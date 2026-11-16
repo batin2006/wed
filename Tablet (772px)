@@ -1,0 +1,19 @@
+
+@media screen and (min-width: 772px) {
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .coding-card {
+        width: 45%;
+    }
+
+    .coding-card img {
+        max-height: 30vh;
+        object-fit: cover;
+    }
+
+}
