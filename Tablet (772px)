@@ -1,19 +1,16 @@
 
 @media screen and (min-width: 772px) {
 
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .coding-card {
-        width: 45%;
+    figure img {
+        border-radius: 50%;
     }
 
-    .coding-card img {
-        max-height: 30vh;
-        object-fit: cover;
+    figure:last-child {
+        grid-column: 1 / -1;
     }
 
 }
